@@ -7,7 +7,7 @@
 #include <map>
 #include <cstring>
 #include <vector>
-#include "hafaswtyczka.hpp"
+#include "../hafaswtyczka.hpp"
 using namespace std;
 void hafaswtyczka::wczytajliniefde(int nkol, string keytln)
 {
@@ -113,11 +113,15 @@ void hafaswtyczka::generujsiec2(int idstart, int time, string keydrz, string key
 					{
 						cout<<"SPP "<<zal2[pair<string,string>(zal1[p1],zal1[p2])]<<" "<<keydrz<<" tak"<<endl;
 						dat foo;
+						cout<<"SPP "<<zal2[pair<string,string>(zal1[p1],zal1[p2])]<<" "<<keytime<<" "<<pt/60<<endl;
+						dat foo9;
 					}
 					if(zal2.find(pair<string,string>(zal1[p2],zal1[p1]))!=zal2.end())
 					{
 						cout<<"SPP "<<zal2[pair<string,string>(zal1[p2],zal1[p1])]<<" "<<keydrz<<" tak"<<endl;
 						dat foo;
+						cout<<"SPP "<<zal2[pair<string,string>(zal1[p2],zal1[p1])]<<" "<<keytime<<" "<<pt/60<<endl;
+						dat foo9;
 					}
 				}
 			}
@@ -135,11 +139,16 @@ void hafaswtyczka::generujsiec2(int idstart, int time, string keydrz, string key
 					{
 						cout<<"SPP "<<zal2[pair<string,string>(zal1[p1],zal1[p2])]<<" "<<keydrz<<" tak"<<endl;
 						dat foo;
+						cout<<"SPP "<<zal2[pair<string,string>(zal1[p1],zal1[p2])]<<" "<<keytime<<" "<<pt/60<<endl;
+						dat foo9;
 					}
 					if(zal2.find(pair<string,string>(zal1[p2],zal1[p1]))!=zal2.end())
 					{
 						cout<<"SPP "<<zal2[pair<string,string>(zal1[p2],zal1[p1])]<<" "<<keydrz<<" tak"<<endl;
 						dat foo;
+						cout<<"SPP "<<zal2[pair<string,string>(zal1[p2],zal1[p1])]<<" "<<keytime<<" "<<pt/60<<endl;
+						dat foo9;
+					
 					}
 				}
 		}
