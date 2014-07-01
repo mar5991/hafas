@@ -1,0 +1,7 @@
+HAFAS - wyszukiwarka połączeń w komunikacji miejskiej
+hafas.hpp - biblioteka wyszukiwarki połączeń
+readztm.hpp - konwersja pliku w formacie ZTM Warszawa do formatów GTFS i bezpośrednio do HAFAS
+ztmwtyczka.hpp - biblioteka wtyczek do edytora grafiki wektorowej TOR-EDIT
+pars - wtyczka do TOR-EDIT : pars sciezka time, gdzie sciezka - ścieżka do pliku w formacie ztm, time - czas w minutach od północy. po kliknięciu w dwa punkty generuje klatki animacji w formacie png wizualizujące najlepszą trasę w kolejnych minutach po czasie time
+pars2 - wtyczka do TOR-EDIT : pars sciezka time, gdzie sciezka - ścieżka do pliku w formacie ztm, time - czas w minutach od północy. po kliknięciu w punkt a potem punkty boczne generuje klatki animacji w formacie png wizualizujące drzewo najlepszych tras do wszystkich punktów z wizualizacją kolorów gałęzi drzewa.
+pars3 - wtyczka do TOR-EDIT : pars sciezka time, gdzie sciezka - ścieżka do pliku w formacie ztm, time - czas w minutach od północy. po kliknięciu w punkt centralny, generuje klatki animacji w png wizualizujące zasięg w kolejnych minutach od time
