@@ -21,4 +21,22 @@ vector <string> rozdziel(char* slowo);
 double todouble(string data);
 int get_times (string time);
 string godz(int godzina);
+struct dat
+{
+	vector <string> dd;
+	string get(int id)
+	{
+		return dd[id];
+	}
+	dat()
+	{
+		char slowo[200000];
+		cin.getline(slowo, 200000);
+		dd=rozdziel(slowo);
+	}
+	int size()
+	{
+		return dd.size();
+	}
+};
 #endif

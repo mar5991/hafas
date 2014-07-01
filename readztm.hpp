@@ -288,10 +288,14 @@ class ztmtogtfs
 		dr_routes=directory+"/routes.txt";
 		dr_trips=directory+"/trips.txt";
 		dr_stopt=directory+"/stop_times.txt";
-		fstream plstop(dr_stop.c_str());
-		fstream plroutes(dr_routes.c_str());
-		fstream pltrips(dr_trips.c_str());
-		fstream plstopt(dr_stopt.c_str());
+		fstream plstop;
+		plstop.open(dr_stop.c_str(), ios::out | ios::trunc);
+		fstream plroutes;
+		plroutes.open(dr_routes.c_str(), ios::out | ios::trunc);
+		fstream pltrips;
+		pltrips.open(dr_trips.c_str(), ios::out | ios::trunc);
+		fstream plstopt;
+		plstopt.open(dr_stopt.c_str(), ios::out | ios::trunc);
 		plik_stop=&plstop;
 		plik_routes=&plroutes;
 		plik_trips=&pltrips;
@@ -323,6 +327,10 @@ class ztmtogtfs
 					readobszar(roftl, plik);
 			}
 		}
+		plstop.close();
+		plroutes.close();
+		pltrips.close();
+		plstopt.close();
 	}
 	private:
 	string doprzecinka(stringstream& ttt)

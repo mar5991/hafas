@@ -1,10 +1,8 @@
 #include "readztm.hpp"
 
-int main()
+int main(int argc, char**argv)
 {
-	string sciez;
-	string dir;
-	cin>>sciez;
-	cin>>dir;
+	string sciez=argv[1];
+	string dir=argv[2];
 	ztmtogtfs foo(sciez, dir);
 }
